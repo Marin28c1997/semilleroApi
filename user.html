@@ -1,0 +1,66 @@
+<html>
+    <head>
+      <title>Usuarios</title>
+      <link rel="shortcut icon" href="log.png">
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="api.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+    </head>
+    <body>
+
+      <div id="app" >
+    <div> 
+        <h1 class="wo"> Tabla de Usuarios </h1>
+      <button @click="logout" class="obt-us">Logout</button>
+      <input type="text" v-model="quantity" placeholder="Cantidad" class="quan"></input>
+      <select v-model="gender" class="personalizacion">
+          <option value="">Todos</option>
+          <option value="male">Hombres</option>
+          <option value="female">Mujeres</option>
+      </select>
+      <button @click="getUsers" class="obt-us">Usuarios</button>
+
+      <table class="table table-hover table-dark">
+          <thead>
+              <tr>
+                  
+                  <th>Picture</th>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Country</th>
+                  <th>Country</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Cell</th>
+                  <th>Eliminar</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr v-for="(user, users) in users" :key="user.id.value">
+                  <td><img :src="user.picture.thumbnail" style="border-radius: 100%;"></td>
+                  <td v-text="user.name.first +' '+ user.name.last"></td>
+                  <td v-text="user.dob.age"></td>
+                  <td v-text="user.nat "></td>
+                  <td><img crossorigin="anonymous" :src="getFlagUrl(user.nat) " style="width: 40px;" /></td>
+                  <td v-text="user.email"></td>
+                  <td v-text="user.phone"></td>
+                  <td v-text="user.cell"></td>
+                  <td>
+                    <button @click="removeUser(users)" type="button" class="btn btn-outline-danger">Eliminar</button>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+      </div>
+    </body>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="api.js"></script>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      </html>

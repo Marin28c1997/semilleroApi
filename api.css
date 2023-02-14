@@ -1,0 +1,136 @@
+.contenedor {
+    margin: 100px auto;
+    width: 400px;
+    height: 70%;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+
+  html{
+    height: 100%;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#37554A,#0BD4C3);
+  }
+
+  .contenedor .elemento label {
+    color: #fff;
+  }
+  .contenedor .elemento input {
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 20px;
+    color: aqua;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 30px;
+  }
+  
+  
+  .inp {
+    background-color: #f72585;
+    border: none;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 30px;
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+    font-size: larger;
+  }
+
+.contenedor .elemento input[type="submit"]{
+    background-color: #f72585;
+    border:none;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+table {
+    margin: 1% auto;
+      background: rgba(0, 0, 0, 0.5);
+      min-height: 150vh;
+      text-align: center;
+  }
+  th, td {
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center; 
+  }
+
+  td{
+    
+    color: aqua;
+  }
+  
+  .personalizacion {
+    color: aqua;
+    width: 10%;
+    border-radius: 8px;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    border-color: #E0AC2D;
+    background-color: #37554A;
+  }
+
+  .quan{
+    color: #0BE0CF;
+    width: 8%;
+    border-radius: 8px;
+    border-color: #E0AC2D;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    background-color: transparent;
+    background-color: #37554A;
+  }
+
+  .obt-us{
+    color: #0BE0CF;
+    width: 18%;
+    border-radius: 8px;
+    border-color: #E0AC2D;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    background-color: transparent;
+    background-color: #37554A;
+  }
+
+  p{
+    color: white;
+  }
+
+  .wo{
+    color: #fff;
+    text-align: center;
+  }
+
+  
+.main-header{
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.image-ref{
+    color: var(--real-white);
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
